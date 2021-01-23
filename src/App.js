@@ -67,7 +67,7 @@ class App extends React.Component {
                <h1>Monsters Rolodex</h1>
                {/** Search box to perform a filtering */}
 				<SearchBox
-					placeholder={"Search a monster..."}
+					placeholder={"Search a monster...."}
 					handleChange={this.onSearchBoxTyping}
 				/>
 
