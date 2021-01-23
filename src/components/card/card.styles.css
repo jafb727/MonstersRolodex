@@ -1,0 +1,47 @@
+/**
+ * Filename: card.styles.css
+ * Author: Jose A Felix
+ * Description: Card component style
+ */
+
+ /** ---------------------------------------------------------------- */
+
+ .card-container{
+      display:flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius:10px;
+      padding:25px;
+      cursor: pointer;
+     -moz-osx-font-smoothing:grayscale;
+     backface-visibility: hidden;
+     transform: translateZ(0);
+     transition: transform 0.25s ease-out;
+     background: linear-gradient(#dc0c98, #3d076d);
+ }
+
+ .card-container:hover{
+     transform: scale(1.05);
+     background: #ff0099;
+}
+
+ .card-container img{
+      border-radius: 50%;
+      max-width: 70%;
+      border:5px solid #490862;
+ }
+
+ .card-container h2{
+     font-size: 3rem;
+     font-family: "Bigelow Rules";
+     margin-bottom: 0;
+     color:#0dd3b9;
+     text-shadow:3px 3px 0 #006661
+ }
+
+ .card-container p{
+      font-family: "Segoe UI Light";
+      font-size: 1.2rem;
+      color: #71ffec;
+ }
+

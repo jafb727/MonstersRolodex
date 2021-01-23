@@ -1,0 +1,15 @@
+/**
+ * Filename: card-list.styles.css
+ * Author: Jose A Felix
+ * Description: Card list component style
+ */
+
+ /** ---------------------------------------------------------------- */
+
+.card-list {
+	width: 85vw;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1.5rem;
+}
