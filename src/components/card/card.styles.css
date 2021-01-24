@@ -4,44 +4,44 @@
  * Description: Card component style
  */
 
- /** ---------------------------------------------------------------- */
+/** ---------------------------------------------------------------- */
 
- .card-container{
-      display:flex;
-      align-items: center;
-      flex-direction: column;
-      border-radius:0.5rem;
-      padding:1.5rem;
-      cursor: pointer;
-     -moz-osx-font-smoothing:grayscale;
-     backface-visibility: hidden;
-     transform: translateZ(0);
-     transition: transform 0.25s ease-out;
-     background: linear-gradient(#dc0c98, #3d076d);
- }
-
- .card-container:hover{
-     transform: scale(1.05);
-     background: #ff0099;
+.card-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 0.5rem;
+	padding: 1.5rem;
+	cursor: pointer;
+	-moz-osx-font-smoothing: grayscale;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	transition: transform 0.25s ease-out;
+	background: linear-gradient(rgb(220 12 152 / 1), rgb(61 7 109 / 0.7));
 }
 
- .card-container img{
-      border-radius: 50%;
-      max-width: 70%;
-      border:5px solid #490862;
- }
+.card-container:hover {
+	transform: scale(1.05);
+	background: #ff0099;
+}
 
- .card-container h2{
-     font-size: 2.5rem;
-     font-family: "Bigelow Rules";
-     margin-bottom: 0;
-     color:#28ffe3;
-     text-shadow:3px 3px 0 #006661
- }
+.card-container img {
+	border-radius: 50%;
+	max-width: 70%;
+	border: 5px solid #490862;
+	filter: brightness(1.2) contrast(1.5) drop-shadow(0 0 3px pink);
+}
 
- .card-container p{
-      font-family: "Segoe UI Light";
-      font-size: 1rem;
-      color: #71ffec;
- }
+.card-container h2 {
+	font-size: 2.5rem;
+	font-family: "Bigelow Rules";
+	margin-bottom: 0;
+	color: #ffc9f6;
+	text-shadow: 3px 3px 0 #ff00ad;
+}
 
+.card-container p {
+	font-family: "Segoe UI Light";
+	font-size: 1rem;
+	color: #71ffec;
+}

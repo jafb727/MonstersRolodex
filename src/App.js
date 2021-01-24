@@ -64,14 +64,14 @@ class App extends React.Component {
 
 		return (
 			<div className="App">
-               <h1>Monsters Rolodex</h1>
-               {/** Search box to perform a filtering */}
+				<h1>Monsters Rolodex</h1>
+				{/** Search box to perform a filtering */}
 				<SearchBox
 					placeholder={"Search a monster...."}
 					handleChange={this.onSearchBoxTyping}
 				/>
 
-                    {/** Listing mosters cards */}
+				{/** Listing mosters cards */}
 				<CardList monstersList={filteredMonsters} />
 			</div>
 		);

@@ -19,7 +19,12 @@ export const SearchBox = ({ placeholder, handleChange }) => {
 	// Rendering component
 	return (
 		<div className="search-box-container">
-			<input className="search-box" type="search" placeholder={placeholder} onChange={handleChange} />
+			<input
+				className="search-box"
+				type="search"
+				placeholder={placeholder}
+				onChange={handleChange}
+			/>
 		</div>
 	);
 };
