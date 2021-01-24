@@ -1,3 +1,11 @@
+/**
+ * Filename: App.css
+ * Author: Jose A Felix
+ * Description: App component style
+ */
+
+ /** ---------------------------------------------------------------- */
+
 .App{
      text-align: center;
 }
@@ -5,6 +13,6 @@
 h1{
      font-family: "Bigelow Rules";
      font-size: 7rem;
-     color: #ff0098;
+     color: #fff;
      text-shadow: 8px 5px 2px rgb(87 0 68);
 }
