@@ -9,7 +9,7 @@
 /** Components */
 import React from "react";
 import { CardList } from "./components/card-list/card-list.component";
-import { SearchBox } from "./components/search-box/search-box.component";
+import SearchBox from "./components/search-box/search-box.component";
 
 /** Stylesheet */
 import "./App.css";
@@ -55,7 +55,7 @@ class App extends React.Component {
 
 	// ----------------------------------------------------------------
 
-	// Renderring component
+	// Rendering component
 	render() {
 		const { monsterList, searchKeyword } = this.state;
 		const filteredMonsters = monsterList.filter((monster) =>

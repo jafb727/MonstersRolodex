@@ -15,16 +15,38 @@ import "./search-box.styles.css";
 // ----------------------------------------------------------------
 
 // Main component
-export const SearchBox = ({ placeholder, handleChange }) => {
+class SearchBox extends React.Component {
+	// Constructor
+	constructor(props) {
+		super(props);
+
+		this.searchBoxFocus = React.createRef();
+	}
+
+	// ----------------------------------------------------------------
+	/** Lifecycle methods */
+
+	// componentDidMount
+	componentDidMount() {
+		this.searchBoxFocus.current.focus();
+	}
+
+	// ----------------------------------------------------------------
+
 	// Rendering component
-	return (
-		<div className="search-box-container">
-			<input
-				className="search-box"
-				type="search"
-				placeholder={placeholder}
-				onChange={handleChange}
-			/>
-		</div>
-	);
-};
+	render() {
+		return (
+			<div className="search-box-container">
+				<input
+					className="search-box"
+					ref={this.searchBoxFocus}
+					type="search"
+					placeholder={this.props.placeholder}
+					onChange={this.props.handleChange}
+				/>
+			</div>
+		);
+	}
+}
+
+export default SearchBox;
