@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Card component 1`] = `
+<div
+  className="card-container"
+>
+  <img
+    alt="monster"
+    src="https://robohash.org/undefined?set=set2&size=180x180"
+  />
+  <h2 />
+  <p />
+  <p />
+</div>
+`;

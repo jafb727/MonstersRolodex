@@ -1,5 +1,5 @@
 {
-	"name": "monsterrolodex",
+	"name": "test",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
@@ -8,8 +8,8 @@
 		"@testing-library/user-event": "^12.1.10",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
-		"react-scripts": "^4.0.1",
-		"web-vitals": "^0.2.4"
+		"react-scripts": "4.0.2",
+		"web-vitals": "^1.0.1"
 	},
 	"scripts": {
 		"start": "react-scripts start",
@@ -35,5 +35,14 @@
 			"last 1 safari version"
 		]
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"enzyme": "^3.11.0",
+		"enzyme-adapter-react-16": "^1.15.6",
+		"enzyme-to-json": "^3.6.1"
+	},
+	"jest": {
+		"snapshotSerializers": [
+			"enzyme-to-json/serializer"
+		]
+	}
 }
